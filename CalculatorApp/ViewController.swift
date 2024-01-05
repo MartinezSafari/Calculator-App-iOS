@@ -38,7 +38,19 @@ class ViewController: UIViewController {
         }
         
         if operand == DIVIDE{
-            answer = Double(num1 / num2)
+            if num2 == 0 {
+                let alert = UIAlertController(title: "Error", message: "Can not be divide by zero", preferredStyle: .alert)
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                
+                alert.addAction(cancelAction)
+                
+            present(alert, animated: true)
+            }
+            else{
+                answer = Double(num1 / num2)
+            }
+            
         }
         
         num1 = 0
