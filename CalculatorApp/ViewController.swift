@@ -24,6 +24,50 @@ class ViewController: UIViewController {
     
     var theNumber :String = "0"
     
+    @IBAction func calculate(sender : UIButton){
+        num2 = Int(theNumber)!
+        
+        if operand == PLUS{
+            answer = Double(num1 + num2)
+        }
+        if operand == MINUS{
+            answer = Double(num1 - num2)
+        }
+        if operand == MULTIPLY{
+            answer = Double(num1 * num2)
+        }
+        
+        if operand == DIVIDE{
+            answer = Double(num1 / num2)
+        }
+        
+        num1 = 0
+        num2 = 0
+        operand = PLUS
+        theNumber = String(answer)
+        printNumber()
+        
+        answer = 0.0
+        theNumber = "0"
+    }
+    
+    @IBAction func setOperand(sender : UIButton){
+        if sender.tag >= 10 && sender.tag >= 13{
+            operand = sender.tag
+            saveNum1()
+        }
+        if sender.tag == -2{
+            theNumber = "0"
+            printNumber()
+        }
+    }
+    
+    func saveNum1(){
+        num1 = Int(theNumber)!
+        theNumber = "0"
+        printNumber()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

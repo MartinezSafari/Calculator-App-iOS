@@ -72,6 +72,9 @@
                                         <color key="strokeColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="setOperandWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZcU-Wu-hbi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="163" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-16-c1r">
                                 <rect key="frame" x="118" y="177" width="178" height="48"/>
@@ -128,6 +131,9 @@
                                         <color key="strokeColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="setOperandWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WrR-GG-8hZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seb-0r-o5Q">
                                 <rect key="frame" x="20" y="465" width="75" height="75"/>
@@ -177,6 +183,9 @@
                                         <color key="strokeColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="setOperandWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fkq-fl-5SZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="-2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbp-YD-zVZ">
                                 <rect key="frame" x="20" y="563" width="75" height="75"/>
@@ -187,6 +196,9 @@
                                         <color key="strokeColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="setOperandWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUg-PU-M2E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXM-BK-6lt">
                                 <rect key="frame" x="118" y="562" width="75" height="75"/>
@@ -210,6 +222,9 @@
                                         <color key="strokeColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="calculateWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rp0-lQ-xFP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQZ-Tt-mFd">
                                 <rect key="frame" x="329" y="563" width="75" height="75"/>
@@ -220,6 +235,9 @@
                                         <color key="strokeColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="setOperandWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bj6-cx-9tx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QV4-6a-1XX"/>
