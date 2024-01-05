@@ -17,15 +17,15 @@ class ViewController: UIViewController {
     
     @IBOutlet var lblText : UILabel!
     
-    var num1 :NSNumber = 0
-    var num2 :NSNumber = 0
-    var operand :NSNumber = 0
-    var answer :Double = 0.0
+    var num1: Double = 0.0
+    var num2: Double = 0.0
+    var operand: Int = 0
+    var answer: Double = 0.0
     
     var theNumber :String = "0"
     
     @IBAction func calculate(sender : UIButton){
-        num2 = Int(theNumber)!
+        num2 = Double(theNumber)!
         
         if operand == PLUS{
             answer = Double(num1 + num2)
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func setOperand(sender : UIButton){
-        if sender.tag >= 10 && sender.tag >= 13{
+        if sender.tag >= 10 && sender.tag <= 13{
             operand = sender.tag
             saveNum1()
         }
@@ -62,8 +62,9 @@ class ViewController: UIViewController {
         }
     }
     
+    
     func saveNum1(){
-        num1 = Int(theNumber)!
+        num1 = Double(theNumber)!
         theNumber = "0"
         printNumber()
     }
